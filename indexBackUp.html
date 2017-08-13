@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ALTRAL SUPERMARKET</title>
+  <meta name="description" content="Supermercado en linea con despacho a domicilio gratuito">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+  <div>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- CONFIGURACION CUANDO LA PAGINA SE HACE PEQUEÑA-->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <!-- RALLITAS QUE APARECEN CUANDO SE HACE PEQUEÑA LA PAGINA-->
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- TITULO QUE APARECE-->
+          <a class="navbar-brand" href="#">ALTRAL SUPERMARKET</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+          <!-- Lista de opciones en la barra superior-->
+          <ul class="nav navbar-nav">
+
+            <!-- SE USA ACTIVE PARA SEÑALAR QUE SE ESTA EN ESTA OPCION -->
+            <li class="active"><a href="#">Mi carro <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Mis Compras</a></li>
+
+            <!-- SE GENERA UNA CASCADA DE OPCIONES DENTRO DE LA BARRA-->
+            <li class="dropdown">
+              <!-- Titulo principal donde esta el boton -->
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ofertas <span class="caret"></span></a>
+
+              <!-- Se crea una lista de opciones dentro de la cascada -->
+              <ul class="dropdown-menu">
+
+                <li><a href="#">Bebestibles</a></li>
+                <li><a href="#">Carnes</a></li>
+                <li><a href="#">Lacteos</a></li>
+                <!-- SEPARADOR -->
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Ver Puntos</a></li>
+
+                <!-- SEPARADOR -->
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Regalar Puntos</a></li>
+
+              </ul>
+
+            </li>
+
+          </ul>
+
+
+
+
+
+          <!-- BARRA DE BUSQUEDA -->
+          <form class="navbar-form navbar-left">
+            <!-- TEXTO DE ENTRADA A BUSCAR -->
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Buscar">
+            </div>
+            <!-- BOTON DE BUSQUEDA -->
+            <button type="submit" class="btn btn-default">Consultar</button>
+          </form>
+
+
+          <!-- SE CREA UNA BARRA D NAVEGACION A LA DERECHA DELA PAGINA -->
+          <ul class="nav navbar-nav navbar-right">
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Usuario <span class="caret"></span></a>
+
+              <ul class="dropdown-menu">
+                <li><a href="#">Cerrar Sesión</a></li>
+                <li><a href="#">Ver Perfil</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+  </div>
+
+
+  <div class="content">
+    <div class="sidenav">
+       <button class="btn btn-primary collapsed btnM" data-toggle="collapse" data-target="#alimentos">Alimentos</button>
+         <div id="alimentos" class="collapse">
+            <ul class="miUl">
+              <li><button type="button" class="btn btn-success btnM">Op1</button></li>
+              <li><button type="button" class="btn btn-success btnM">Op2</button></li>
+              <li><button type="button" class="btn btn-success btnM">Op3</button></li>
+            </ul>
+          </div>
+        <button class="btn btn-primary collapsed btnM" data-toggle="collapse" data-target="#lacteos">Lacteos</button>
+          <div id="lacteos" class="collapse">
+              <ul class="miUl">
+              <li><button type="button" class="btn btn-success btnM">Op1</button></li>
+              <li><button type="button" class="btn btn-success btnM">Op2</button></li>
+              <li><button type="button" class="btn btn-success btnM">Op3</button></li>
+            </ul>
+            </div>
+        <button class="btn btn-primary collapsed btnM" data-toggle="collapse" data-target="#bebestibles">Bebestibles</button>
+          <div id="bebestibles" class="collapse">
+              <ul class="miUl">
+              <li><button type="button" class="btn btn-success btnM">Op1</button></li>
+              <li><button type="button" class="btn btn-success btnM">Op2</button></li>
+              <li><button type="button" class="btn btn-success btnM">Op3</button></li>
+            </ul>
+            </div>
+        <button class="btn btn-primary collapsed btnM" data-toggle="collapse" data-target="#hogar">Hogar</button>
+          <div id="hogar" class="collapse">
+              <ul class="miUl">
+              <li><button type="button" class="btn btn-success btnM">Op1</button></li>
+              <li><button type="button" class="btn btn-success btnM">Op2</button></li>
+              <li><button type="button" class="btn btn-success btnM">Op3</button></li>
+            </ul>
+            </div>
+
+        
+        
+
+  </div>
+
+
+
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/bootstrap.js"></script> 
+</body>
+</html>

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ALTRAL SUPERMARKET</title>
+  <meta name="description" content="Supermercado en linea con despacho a domicilio gratuito">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+  <div>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+
+
+
+        <!-- CONFIGURACION CUANDO LA PAGINA SE HACE PEQUEÑA-->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <!-- RALLITAS QUE APARECEN CUANDO SE HACE PEQUEÑA LA PAGINA-->
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+
+          <a class="navbar-brand" href="#">
+          <img alt="Brand" class="miImagen" src="images/logo.png">
+          </a>
+        </div>
+
+        
+
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+         
+    
+          <!-- BARRA DE BUSQUEDA -->
+          <form class="navbar-form navbar-right">
+            <!-- TEXTO DE ENTRADA A BUSCAR -->
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Buscar">
+            </div>
+            <!-- BOTON DE BUSQUEDA -->
+            <button type="submit" class="btn btn-default">Consultar</button>
+          </form>
+          
+          <div class="minavbar">
+      
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#inicioSesion">Iniciar Sesión</button>
+
+
+      <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#registroUsuario">Registrarme Ahora</button>
+
+    </div>
+
+
+
+
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+  </div>
+
+
+  <div class="content">
+    <div class="sidenav">
+
+          
+
+       <button class="btn btn-default collapsed mainBtn" data-toggle="collapse" data-target="#alimentos">Alimentos</button>
+         <div id="alimentos" class="collapse">
+            <ul class="miUl">
+              <li><button type="button" class="btn btn-danger btnM">Op1</button></li>
+              <li><button type="button" class="btn btn-danger btnM">Op2</button></li>
+              <li><button type="button" class="btn btn-danger btnM">Op3</button></li>
+            </ul>
+          </div>
+
+
+        <button class="btn btn-default collapsed mainBtn" data-toggle="collapse" data-target="#lacteos">Lacteos</button>
+          <div id="lacteos" class="collapse">
+              <ul class="miUl">
+              <li><button type="button" class="btn btn-danger btnM">Op1</button></li>
+              <li><button type="button" class="btn btn-danger btnM">Op2</button></li>
+              <li><button type="button" class="btn btn-danger btnM">Op3</button></li>
+            </ul>
+            </div>
+
+
+        <button class="btn btn-default collapsed mainBtn" data-toggle="collapse" data-target="#bebestibles">Bebestibles</button>
+          <div id="bebestibles" class="collapse">
+              <ul class="miUl">
+              <li><button type="button" class="btn btn-danger btnM">Op1</button></li>
+              <li><button type="button" class="btn btn-danger btnM">Op2</button></li>
+              <li><button type="button" class="btn btn-danger btnM">Op3</button></li>
+            </ul>
+            </div>
+
+
+        <button class="btn btn-default collapsed mainBtn" data-toggle="collapse" data-target="#hogar">Hogar</button>
+          <div id="hogar" class="collapse">
+              <ul class="miUl">
+              <li><button type="button" class="btn btn-danger btnM">Op1</button></li>
+              <li><button type="button" class="btn btn-danger btnM">Op2</button></li>
+              <li><button type="button" class="btn btn-danger btnM">Op3</button></li>
+            </ul>
+            </div>
+        
+        <button class="btn btn-default collapsed mainBtn" data-toggle="collapse" data-target="#electronica">Electronica</button>
+          <div id="electronica" class="collapse">
+              <ul class="miUl">
+              <li><button type="button" class="btn btn-danger btnM">Op1</button></li>
+              <li><button type="button" class="btn btn-danger btnM">Op2</button></li>
+              <li><button type="button" class="btn btn-danger btnM">Op3</button></li>
+            </ul>
+            </div>
+
+             <button class="btn btn-default collapsed mainBtn" data-toggle="collapse" data-target="#farmacia">Farmacia</button>
+          <div id="farmacia" class="collapse">
+              <ul class="miUl">
+              <li><button type="button" class="btn btn-danger btnM">Op1</button></li>
+              <li><button type="button" class="btn btn-danger btnM">Op2</button></li>
+              <li><button type="button" class="btn btn-danger btnM">Op3</button></li>
+            </ul>
+            </div>
+        
+
+  </div>
+
+
+
+
+
+<!-- VENTANA INICIO SESION -->
+<div class="modal fade" tabindex="-1" role="dialog" id="inicioSesion">
+  <div class="modal-dialog" role="document">
+
+
+    <!-- CONTENIDO COMO EN CUALQUIER PAGINA -->
+    <div class="modal-content">
+
+    <!-- HEADER -->
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="msnInicio">Ingrese sus Credenciales</h4>
+      </div>
+
+
+      <!-- BODY -->
+      <div class="modal-body">
+            
+            
+          <form class="form-horizontal" id="formu-inicio">
+
+
+
+          <!-- ESTO TIENE UN CAMPO (EMAIL)-->
+          <div class="form-group">
+          <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+          <div class="col-sm-10">
+          <input type="email" class="form-control" id="usuario" placeholder="Email" required="true" name="usuario">
+          </div>
+          </div>
+
+          <!-- PASSWORD -->
+          <div class="form-group">
+          <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+          <div class="col-sm-10">
+          <input type="password" class="form-control" id="password" placeholder="Password" required="true" name="password">
+          </div>
+          </div>
+
+          <!--  SE INCORPORA UN PARAMERO NUEVO MEDIANTE UN INPUT asi el controlador sabra qu siempre este formulario es para registrar usuarios -->
+          <input type="hidden" name="tipoOperacion" value="inicioSesion">
+          <!-- BOTON -->
+          <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+          <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+          </div>
+          </div>
+
+
+
+          </form>
+
+
+      </div>
+
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
+
+
+<!-- VENTANA REGISTRO USUARIO -->
+<div class="modal fade" tabindex="-1" role="dialog" id="registroUsuario">
+  <div class="modal-dialog" role="document">
+
+
+    <!-- CONTENIDO COMO EN CUALQUIER PAGINA -->
+    <div class="modal-content">
+
+    <!-- HEADER -->
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="msnEstadoRegistro">Ingrese sus Credenciales</h4>
+      </div>
+
+
+      <!-- BODY -->
+      <div class="modal-body">
+            
+            
+          <form class="form-horizontal" id="formu-registro">
+
+
+          <!-- NOMBRE-->
+          <div class="form-group">
+          <label for="nombreUsuario" class="col-sm-2 control-label">Nombre</label>
+          <div class="col-sm-10">
+          <input type="text" class="form-control" id="nombreUsuario" placeholder="Nombre" required="true" name="nombreUsuario">
+          </div>
+          </div>
+
+          <!-- APELLIDO -->
+          <div class="form-group">
+          <label for="apellidoUsuario" class="col-sm-2 control-label">Apellido</label>
+          <div class="col-sm-10">
+          <input type="text" class="form-control" id="apellidoUsuario" placeholder="Apellido" required="true" name="apellidoUsuario">
+          </div>
+          </div>
+
+          <!-- TELEFONO -->
+          <div class="form-group">
+          <label for="telefonoUsuario" class="col-sm-2 control-label">Telefono</label>
+          <div class="col-sm-10">
+          <input type="text" class="form-control" id="telefonoUsuario" placeholder="Telefono" required="true" name="telefonoUsuario">
+          </div>
+          </div>
+
+
+          <!-- ESTO TIENE UN CAMPO (EMAIL)-->
+          <div class="form-group">
+          <label for="emailUsuario" class="col-sm-2 control-label">Email</label>
+          <div class="col-sm-10">
+          <input type="email" class="form-control" id="emailUsuario" placeholder="Email" required="true" name="emailUsuario">
+          </div>
+          </div>
+
+          <!-- PASSWORD -->
+          <div class="form-group">
+          <label for="passwordUsuario" class="col-sm-2 control-label">Password</label>
+          <div class="col-sm-10">
+          <input type="password" class="form-control" id="passwordUsuario" placeholder="Password" required="true" name="passwordUsuario">
+          </div>
+          </div>
+
+          <!--  SE INCORPORA UN PARAMERO NUEVO MEDIANTE UN INPUT asi el controlador sabra qu siempre este formulario es para registrar usuarios -->
+          <input type="hidden" name="tipoOperacion" value="registrarUsuario">
+
+
+
+
+
+
+
+          <!-- BOTON -->
+          <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+          <button type="submit" class="btn btn-warning">Registrarme</button>
+          </div>
+          </div>
+
+
+
+          </form>
+
+
+      </div>
+
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="hero-wrapper" >
+            <div class="carousel-wrapper">
+
+
+              <div id="hero-carousel" class="carousel slide carousel-fade">
+    
+                <!-- Se definen los indicadores del carrusel, como por ejemplo cuantos espacios tendra -->
+                <ol class="carousel-indicators">
+                  <li data-target="#hero-carousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#hero-carousel" data-slide-to="1"></li>
+                  <li data-target="#hero-carousel" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Se definen los contenidos de cada uno de los espacios definidos anteriormente -->
+                <div class="carousel-inner">
+
+                  <div class="item active">
+                    <img src="images/oferta1.jpg">
+                  </div>
+
+                  <div class="item">
+                    <img src="images/oferta2.png">
+                  </div>
+
+                  <div class="item">
+                    <img src="images/oferta3.jpg">
+                  </div>
+
+                </div>
+
+
+                <!-- Estos botones llaman al id HERO-CAROUSEL y entregan los respectivos parametros para avanzar o retroceder de posicion  -->
+                <a class="left carousel-control" href="#hero-carousel" data-slide="prev">
+                  <i class="fa fa-chevron-left left"></i>
+                </a>
+
+
+                <a class="right carousel-control" href="#hero-carousel" data-slide="next">
+                  <i class="fa fa-chevron-right right"></i>
+                </a>
+
+              </div>
+            </div>
+  </div>
+
+
+
+
+
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/bootstrap.js"></script> 
+  <script src="js/action.js"></script>
+</body>
+</html>

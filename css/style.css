@@ -1,0 +1,98 @@
+         .content {
+         height: 100%;
+         }
+         .navbar {
+         z-index: 2;
+         position: fixed;
+         width: 100%;
+         }
+         .sidenav {
+         height: 100%;
+         width: 17%;
+         position: fixed;
+         z-index: 1;
+         top: 0;
+         padding-top: 4.8%;
+         left: 0;
+         background-color: #f8f8f8;
+         border-color: #e7e7e7;
+         overflow-x: hidden;
+         }
+         li{
+         list-style-type: none; 
+         }
+         
+         .btnM{
+         width: 99%;  
+         height: 8%;
+         text-align: left;
+         }
+         
+         
+         .mainBtn{
+         background-color: #f8f8f8;
+         width: 99%;  
+         height: 8%;
+         text-align: left;
+         }
+         a:hover, a:focus {
+         color: #23527c;
+         text-decoration: none;
+         }
+         
+         .miUl{
+         margin-bottom: 0;
+         padding-left: 0;
+         }
+         
+         .buscarPor{
+         background-color: #5cb85c;
+         }
+         
+         .miImagen{
+         background-color: #f8f8f8;
+         width: 6%;
+         height: 101%;
+         position: absolute;
+         top: 0px;
+         left: 5.4%;
+         
+         }
+         
+         .minavbar{
+         text-align: center;
+         padding-top: 0.7%;
+         position: absolute;
+         top: 0%;
+         left: 46.7%;
+         }
+         
+         
+         #hero-wrapper {
+         width: 84%;
+         height: 33.7%;
+         position: fixed;
+         padding-left: 16%;
+         padding-top: 4%;
+         }
+         
+         #hero-wrapper .carousel-wrapper,
+         #hero-carousel {
+         height: 100%;
+         width: 100%;
+         position: absolute;
+         }
+         
+         
+         #hero-carousel img {
+         height: 184px;
+         width: 918px;
+         }
+         
+         
+         #hero-carousel i {
+         position: absolute;
+         top: 50%;
+         }
+         
+         
